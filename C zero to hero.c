@@ -45,3 +45,18 @@ int main()
 	printf("%d", sum);
 	return 0;
 }
+// WAp write a programe to calculate the subtraction , multiplication , and division!
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int a = 7;
+	int b = 5;
+	int sub = a - b;
+	int mul = a * b;
+	int div = a / b;
+	printf("%d", sub);
+	printf("\n%d",mul);
+	printf("\n%d",div);
+	return 0;
+}
