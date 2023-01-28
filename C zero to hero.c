@@ -60,3 +60,26 @@ int main()
 	printf("\n%d",div);
 	return 0;
 }
+//WAP write a programme to calculate the speed of car!
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int d = 25;
+	int t = 5;
+	int s = d/t;
+	printf("The speed of Car is %d km/h", s);
+}
+//WAP write a programme to calculate the speed of car!
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int d,t,s;
+	printf("Enter distance travelled by car in km\n");
+	scanf("%d",&d);
+	printf("Enter time taken by car in hr\n");
+	scanf("%d",&t);
+	s = d / t;
+	printf("The speed of Car is %d km/h", s);
+}
