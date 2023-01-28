@@ -103,3 +103,43 @@ int main()
 	printf("Division of Number %d\n",div);
 	return 0;
 }
+//WAP write a programme to ask a user to enter a biodata like reg.no , name , city , contact no , and cgpa!
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char first_name[20];
+	char middle_name[20];
+	char last_name[20];
+	char city[21];
+	float cgpa;
+	double reg[8],contact[10];
+	
+	printf("Enter reg.no ");
+	scanf("%ls",&reg);
+	
+	printf("Enter first name ");
+	scanf("%s",&first_name);
+	
+	printf("Enter middle name ");
+	scanf("%s",&middle_name);
+	
+	printf("Enter last name ");
+	scanf("%s",&last_name);
+	
+	printf("Enter city name ");
+	scanf("%s",&city);
+	
+	printf("Enter contact no ");
+	scanf("%ls",&contact);
+	
+	printf("Enter cgpa ");
+	scanf("%f",&cgpa);
+	
+	printf("\nReg.no %ls\n",reg);
+	printf("Name %s %s %s\n",first_name,middle_name,last_name);
+	printf("City %s\n",city);
+	printf("Contact no %ls\n",contact);
+	printf("CGPA %.2f\n",cgpa);
+	
+}
