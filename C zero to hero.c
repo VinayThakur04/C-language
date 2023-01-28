@@ -83,3 +83,23 @@ void main()
 	s = d / t;
 	printf("The speed of Car is %d km/h", s);
 }
+//WAP write a programme to take a number from user and do addition , subtraction , multiplaction , and division!
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int a , b , add , sub , mul , div;
+	printf("Type 1st number");
+	scanf("%d", &a);
+	printf("Type 2nd number");
+	scanf("%d", &b);
+	add = a + b;
+	sub = a - b;
+	mul = a * b;
+	div = a / b;
+	printf("Addition of Number %d\n",add);
+	printf("Subtraction of Number %d\n",sub);
+	printf("Multiplication of Number %d\n",mul);
+	printf("Division of Number %d\n",div);
+	return 0;
+}
