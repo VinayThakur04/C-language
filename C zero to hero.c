@@ -152,3 +152,23 @@ int main()
     printf("Hello, World!\n%s",a);
     return 0;
 }
+// WAP You have to print the character,ch, in the first line. Then print s in next line. In the last line print the sentence, sen!
+#include <stdio.h>
+
+int main(){
+    char ch;
+    char str[50];
+    char sentence[100];
+
+    scanf("%c", &ch);
+
+    scanf("%s", str);
+
+    scanf(" %[^\n]s", sentence);
+
+    printf("%c\n", ch);
+    printf("%s\n", str);
+    printf("%s", sentence);
+
+    return 0;
+}
