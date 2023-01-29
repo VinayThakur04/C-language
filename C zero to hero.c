@@ -143,3 +143,12 @@ void main()
 	printf("CGPA %.2f\n",cgpa);
 	
 }
+// WAP write a programe to print Hello, World! in first line and in second line print the sentence that is input from user!
+#include<stdio.h>
+int main()
+{
+    char a[100];
+    gets(a);  //it take sentence as an input from user
+    printf("Hello, World!\n%s",a);
+    return 0;
+}
