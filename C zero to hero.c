@@ -174,7 +174,7 @@ int main(){
 }
 //Given a positive integer denoting , do the following:
 //If 1 <=n<=9, print the lowercase English word corresponding to the number (e.g., one for 1, two for 2, etc.).
-//Ifn>9 , print Greater than 9. in c programming.
+//Ifn>9 , print Greater than 9.
 
 #include <stdio.h>
 
@@ -206,5 +206,47 @@ int main()
     else
         printf("Greater than 9");
 
+    return 0;
+}
+//using for loop For each integer  in the interval  (given as input) : If 1<= n < <=9, then print the English representation
+// of it in lowercase. That is "one" for 1, "two" for 2, and so on.Else if n>9 and it is an even number, then print "even".
+//Else if n>9 and it is an odd number, then print "odd".
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() 
+{
+    int a, b;
+    scanf("%d\n%d", &a, &b);
+    for(int i=a; i<=b; i++)
+    {
+        if(i>=1 && i<=9){
+            if(i==1)
+                printf("one\n");
+            else if(i==2)
+                printf("two\n");
+            else if(i==3)
+                printf("three\n");
+            else if(i==4)
+                printf("four\n");
+            else if(i==5)
+                printf("five\n");
+            else if(i==6)
+                printf("six\n");
+            else if(i==7)
+                printf("seven\n");
+            else if(i==8)
+                printf("eight\n");
+            else
+                printf("nine\n");
+        }
+        else{
+            if(i%2==0)
+                printf("even\n");
+            else
+                printf("odd\n");
+        }
+    }
     return 0;
 }
