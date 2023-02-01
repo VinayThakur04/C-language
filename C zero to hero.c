@@ -143,6 +143,16 @@ void main()
 	printf("CGPA %.2f\n",cgpa);
 	
 }
+//Write a programme to use unary operaotr!
+#include<stdio.h>
+int main()
+{
+	int a=1,b=1,c;
+	c = a++ + b;
+	printf("%d,%d,%d",a,b,c);
+	return 0;
+
+}
 // WAP write a programe to print Hello, World! in first line and in second line print the sentence that is input from user!
 #include<stdio.h>
 int main()
