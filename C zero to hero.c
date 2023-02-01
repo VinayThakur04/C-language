@@ -163,6 +163,30 @@ int main()
 	printf("%d,%d,%d",a,b,c);
 	return 0;
 }
+//Use of Relational Operator!
+#include<stdio.h>
+int main()
+{
+	int a,b,c,d,e,f,g,h;
+	printf("Enter the value for a ");
+	scanf("%d",&a);
+	printf("Enter the value for b ");
+	scanf("%d",&b);
+	c=a<b;
+	printf("In (a<b) operation result = %d\n",c);
+	d=a>b;
+	printf("In (a>b) operation result = %d\n",d);
+	e=a>=b;
+	printf("In (a>=b) operation result = %d\n",e);
+	f=a<=b;
+	printf("In (a<=b) operation result = %d\n",f);
+	g=a==b;
+	printf("In (a==b) operation result = %d\n",g);
+	h=a!=b;
+	printf("In (a!=b) operation result = %d",h);
+	return 0;
+
+}
 // WAP write a programe to print Hello, World! in first line and in second line print the sentence that is input from user!
 #include<stdio.h>
 int main()
