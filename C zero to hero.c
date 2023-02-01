@@ -186,6 +186,15 @@ int main()
 	printf("In (a!=b) operation result = %d",h);
 	return 0;
 }
+//Use of Logical operator!
+#include<stdio.h>
+int main()
+{
+	int x =1,y=0,z=5;
+	int a=x&&y||z++;
+	printf("%d",a);
+	return 0;
+}
 //Use of Bitwise Operator!
 #include<stdio.h>
 int main()
