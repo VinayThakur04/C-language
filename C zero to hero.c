@@ -143,6 +143,17 @@ void main()
 	printf("CGPA %.2f\n",cgpa);
 	
 }
+// Use of Arithmetic operator like modulus!
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	double x = 5.3,y = 2.0;
+	double res = remainder(x, y);
+	printf("Value of x is %0.2lf",res);
+	return 0;
+
+}
 //Write a programme to use unary operaotr!
 #include<stdio.h>
 int main()
@@ -151,7 +162,6 @@ int main()
 	c = a++ + b;
 	printf("%d,%d,%d",a,b,c);
 	return 0;
-
 }
 // WAP write a programe to print Hello, World! in first line and in second line print the sentence that is input from user!
 #include<stdio.h>
