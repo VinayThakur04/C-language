@@ -231,9 +231,7 @@ int main(){
     char sentence[100];
 
     scanf("%c", &ch);
-
     scanf("%s", str);
-
     scanf(" %[^\n]s", sentence);
 
     printf("%c\n", ch);
