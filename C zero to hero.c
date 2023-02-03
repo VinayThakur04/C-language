@@ -245,31 +245,6 @@ int main()
 	return 0;
 	
 }
-//WAP to find grade of a student marks!
-#include<stdio.h>
-#include<conio.h>
-int main()
-{
-	float marks;
-	printf("Enter the marks ");
-	scanf("%f",&marks);
-	if (marks > 90 && marks <=100){
-		printf("Grade A");
-	}
-	else if(marks > 80 && marks <= 90){
-		printf("Grade B");
-	}
-	else if(marks > 70 && marks <= 80){
-		printf("Grade C");
-	}
-	else if(marks > 60 && marks <= 70){
-		printf("marks D");
-	}
-	else
-		printf("Fail");
-	return 0;
-	
-}
 // WAP write a programe to print Hello, World! in first line and in second line print the sentence that is input from user!
 #include<stdio.h>
 int main()
@@ -296,6 +271,31 @@ int main(){
     printf("%s", sentence);
 
     return 0;
+}
+//WAP to find grade of a student marks!
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	float marks;
+	printf("Enter the marks ");
+	scanf("%f",&marks);
+	if (marks > 90 && marks <=100){
+		printf("Grade A");
+	}
+	else if(marks > 80 && marks <= 90){
+		printf("Grade B");
+	}
+	else if(marks > 70 && marks <= 80){
+		printf("Grade C");
+	}
+	else if(marks > 60 && marks <= 70){
+		printf("marks D");
+	}
+	else
+		printf("Fail");
+	return 0;
+	
 }
 //Given a positive integer denoting , do the following:
 //If 1 <=n<=9, print the lowercase English word corresponding to the number (e.g., one for 1, two for 2, etc.).
