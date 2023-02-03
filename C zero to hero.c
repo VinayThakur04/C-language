@@ -213,6 +213,38 @@ int main()
 	printf("b>>1=%d\n",b>>1);
 	return 0;
 }
+//WAP to find or print the size of integer , character , array of character , float , and double data type!
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int a,b,c,d,e,f;
+	char ch;
+	char ar[10];
+	float fg;
+	double dob;
+	b = sizeof(a);
+	c = sizeof(ch);
+	d = sizeof(ar);
+	e = sizeof(fg);
+	f = sizeof(dob);
+	printf("The size of integer data type is %d\n",b);
+	printf("The size of character data type is %d\n",c);
+	printf("The size of array of character data type is %d\n",d);
+	printf("The size of float data type is %d\n",e);
+	printf("The size of double data type is %d",f);
+	return 0;
+}
+//WAP to do arithmetic calculations
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	float b = 5 % 3 & 4 + 5 * 6;
+	printf("%f",b);
+	return 0;
+	
+}
 // WAP write a programe to print Hello, World! in first line and in second line print the sentence that is input from user!
 #include<stdio.h>
 int main()
@@ -318,5 +350,3 @@ int main()
     }
     return 0;
 }
-
-//Vinay Kumar Thakur
