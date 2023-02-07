@@ -213,6 +213,15 @@ int main()
 	printf("b>>1=%d\n",b>>1);
 	return 0;
 }
+//Use conditional operator , to find given number is even or odd.
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a;
+	scanf("%d",&a);
+	a%2==0 ? printf("Even") : printf("Odd");
+}
 //WAP to find or print the size of integer , character , array of character , float , and double data type!
 #include<stdio.h>
 #include<conio.h>
@@ -452,4 +461,3 @@ void main()
 	else
 		printf("\n Invalid Number");
 }
-//Vinay Kumar Thakur
