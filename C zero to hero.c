@@ -510,3 +510,37 @@ int main()
 	return 0;
 	
 }
+//WAP to print the days of the week using switch statement.
+#include<stdio.h>
+int main()
+{
+	int w;
+	printf("Enter a number between 0 to 6:");
+	scanf("%d",&w);
+	switch(w){
+		case 0:
+			printf("\n Sunday");
+		break;
+		case 1:
+			printf("\n Monday");
+		break;
+		case 2:
+			printf("\n Tuesday");
+		break;
+		case 3:
+			printf("\n Wednesday");
+		break;
+		case 4:
+			printf("\n Thrusday");
+		break;
+		case 5:
+			printf("\n Friday");
+		break;
+		case 6:
+			printf("\n Saturday");
+		break;
+		default:
+			printf("Invalid number");
+	}
+return 0;
+}
