@@ -461,3 +461,26 @@ void main()
 	else
 		printf("\n Invalid Number");
 }
+//WAP to find out the smallest number out of three variables using nasted if statement!
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("Enter 1st number: ");
+	scanf("%d",&a);
+	printf("Enter 2nd number: ");
+	scanf("%d",&b);
+	printf("Enter 3rd number: ");
+	scanf("%d",&c);
+	if(a<b)
+	{
+		if(a<c){
+			printf("A is smaller than b & c");
+		}
+		else{
+			printf("A is smaller than B but not C");
+		}
+	}
+	else
+	printf("A is not smaller than B & C");
+}
