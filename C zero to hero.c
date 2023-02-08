@@ -544,3 +544,31 @@ int main()
 	}
 return 0;
 }
+//WAP to print fruits name from A to E.
+#include<stdio.h>
+int main()
+{
+	char ch;
+	printf("Enter a number:");
+	scanf("%c",&ch);
+	switch(ch){
+		case 'A':
+			printf("\n Apple");
+		break;
+		case 'B':
+			printf("\n Banana");
+		break;
+		case 'C':
+			printf("\n Caimito");
+		break;
+		case 'D':
+			printf("\n Date");
+		break;
+		case 'E':
+			printf("\n Elderberry");
+		break;
+		default:
+			printf("Invalid number");
+	}
+return 0;
+}
