@@ -613,3 +613,31 @@ int main()
 	}
 	return 0;
 }
+//WAP a program to print the number entered by the user using do while loop
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("Enter the value of n: ");
+	scanf("%d",&n);
+	do{
+		printf("%d\n",n);
+		n--;
+	}
+	while (n>0);
+	return 0;
+}
+//WAP a program to print the table entered by the user using do while loop
+#include<stdio.h>
+int main()
+{
+	int a=1,n;
+	printf("Enter the value of n: ");
+	scanf("%d",&n);
+	do{
+		printf("%d * %d = %d\n",n,a,a*n);
+		a++;
+	}
+	while (a<=10);
+	return 0;
+}
