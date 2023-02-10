@@ -685,3 +685,19 @@ int main()
 	printf("The sum of %d natural number is %d",n,sum);
 	return 0;
 }
+//Given a five digit integer, print the sum of its digits.
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int n,sum = 0 , remainder;
+    scanf("%d", &n);
+    while(n>0){
+        remainder = n % 10;
+        sum = sum + remainder;
+        n = n / 10;
+    }
+    printf("%d",sum);
+    return 0;
+}
