@@ -653,3 +653,23 @@ int main()
 	}
 	return 0;
 }
+//WAP to find weather the number is even or odd if it is even print the table of that and if it is odd number find the square root of that!
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int n,a=1;
+	printf("Enter the value of n: ");
+	scanf("%d",&n);
+	if (n%2==0){
+		printf("Number is even\n");
+		while (a<=10){
+		printf("%d * %d = %d\n",n,a,a*n);
+		a++;
+		}
+	}
+	else
+	printf("Number is odd So Square root of %d is %.2f",n,sqrt(n));
+	return 0;
+}
+ 
