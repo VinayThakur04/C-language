@@ -672,4 +672,16 @@ int main()
 	printf("Number is odd So Square root of %d is %.2f",n,sqrt(n));
 	return 0;
 }
- 
+ //WAP a to calculate the sum of 1st n natural numbers using for loop!
+#include<stdio.h>
+int main()
+{
+	int i,n,sum = 0;
+	printf("Enter the value of n: ");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++){
+		sum = sum + i;
+	}
+	printf("The sum of %d natural number is %d",n,sum);
+	return 0;
+}
