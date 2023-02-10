@@ -587,3 +587,16 @@ int main()
 	}
 	return 0;
 }
+//WAP to print descending numbers upto 10 started by user input.
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("Enter the value of n: ");
+	scanf("%d",&n);
+	while (n<=10){
+		printf("%d\n",n);
+		n++;
+	}
+	return 0;
+}
