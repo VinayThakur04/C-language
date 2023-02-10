@@ -641,3 +641,15 @@ int main()
 	while (a<=10);
 	return 0;
 }
+//WAP a program to print the table entered by the user using for loop
+#include<stdio.h>
+int main()
+{
+	int a=1,n;
+	printf("Enter the value of n: ");
+	scanf("%d",&n);
+	for(a=1;a<=10;a++){
+		printf("%d * %d = %d\n",n,a,a*n);
+	}
+	return 0;
+}
