@@ -713,3 +713,4 @@ int main()
     (age>=18)?printf("can cast vote"):printf("cannot cast vote");
     return 0;
 }
+//Vinay Kumar Thakur
