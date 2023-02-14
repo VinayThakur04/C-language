@@ -713,4 +713,17 @@ int main()
     (age>=18)?printf("can cast vote"):printf("cannot cast vote");
     return 0;
 }
-//Vinay Kumar Thakur
+//WAP to find the factorial of 1 to n numbers!
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int n,i;
+	int pro=1;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++){
+		pro = pro * i;
+	}
+	printf("%d",pro);
+	return 0;
+}
