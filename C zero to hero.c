@@ -895,3 +895,31 @@ int main()
 	}
 	return 0;
 }
+//create an array of size  dynamically, and read the values from stdin. Iterate the array
+//calculating the sum of all elements. Print the sum and free the memory where the array is 
+//stored c programming.
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int n; // variable to hold the size of the array
+    int *arr; // pointer to hold the address of the dynamically allocated array
+    int sum = 0; // variable to hold the sum of the array elements
+
+    printf("Enter the size of the array: ");
+    scanf("%d", &n);
+
+    arr = (int*) malloc(n * sizeof(int)); // dynamically allocate the array
+
+    printf("Enter the elements of the array: ");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+        sum += arr[i];
+    }
+
+    printf("The sum of the array elements is %d\n", sum);
+
+    free(arr); // free the dynamically allocated memory
+
+    return 0;
+}
