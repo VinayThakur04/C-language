@@ -748,3 +748,26 @@ int main() {
 
     return 0;
 }
+//WAP to ask the user to enter the values of to dimensional array and display them in the form of matrix!
+#include<stdio.h>
+int main(){
+	int r,c,i,j;
+	printf("Enter the value of rows and columns: ");
+	scanf("%d %d",&r,&c);
+	int a[r][c];
+	printf("Enter the values for matrix: \n");
+	for (i=0;i<r;i++){
+		for (j=0;j<c;j++){
+			scanf("%d",&a[i][j]);
+		}
+	}
+	printf("Output of matrix\n");
+	for (i=0;i<r;i++){
+		for (j=0;j<c;j++){
+			
+			printf("%d\t",a[i][j]);
+			}
+			printf("\n");
+		}
+	return 0;
+}
