@@ -811,3 +811,43 @@ int main()
 	}
 	return 0;
 }
+//WAP to perform the substriction of two matrix
+#include<stdio.h>
+int main()
+{
+	int r,c,i,j;
+	printf("Enter a value for rows and columns you want: ");
+	scanf("%d %d",&r,&c);
+	int a[r][c];
+	printf("Enter a value for 1st matrix:\n");
+	for(i=0;i<r;i++){
+		for(j=0;j<c;j++){
+			scanf("%d",&a[i][j]);
+		}
+	}
+	/*Second matrix input code*/
+	int b[r][c];
+	printf("Enter a value for 2nd matrix:\n");
+	for(i=0;i<r;i++){
+		for(j=0;j<c;j++){
+			scanf("%d",&b[i][j]);
+		}
+	}
+	/*Substriction of two matrix*/
+	int sub[r][c];
+	for(i=0;i<r;i++){
+		for(j=0;j<c;j++){
+			sub[i][j]=a[i][j]-b[i][j];
+		}
+	}
+	printf("Final matrix after substriction:\n");
+	/*printing of final matrix*/
+	for(i=0;i<r;i++){
+		for(j=0;j<c;j++){
+			printf("%d\t",sub[i][j]);
+		}
+		/*for printing in matrix form we use \n for nxt line printing*/
+		printf("\n");
+	}
+	return 0;
+}
