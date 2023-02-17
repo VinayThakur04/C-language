@@ -1008,3 +1008,4 @@ int main(){
 	printf("The character is = %c",ch);
 	return 0;
 }
+//Vinay kumar thakur
