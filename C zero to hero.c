@@ -969,3 +969,20 @@ int main(){
 	}
 	return 0;
 }
+//WAP to use goto statement!
+#include<stdio.h>
+int main(){
+	int i;
+	for(i=1;i<5;i++){
+		if(i==2){
+		goto there;
+		}
+		printf("%d\n",i);
+	}
+	there:
+		printf("two\n");
+		for (i=1;i<=10;i++){
+			printf("2 * %d = %d\n",i,2*i);
+		}
+	return 0;
+}
