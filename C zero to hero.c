@@ -923,4 +923,17 @@ int main() {
 
     return 0;
 }
-//vinay kumar thakur
+//WAP to print stars in pattern!
+#include<stdio.h>
+int main(){
+	int j,i,a;
+	printf("enter the number for right angled triangle: ");
+	scanf("%d",&a);
+	for(i=1;i<=a;i++){
+		for(j=1;j<=i;j++){
+			printf("* ");
+		}
+		printf("\n");
+	}
+	return 0;
+}
