@@ -117,22 +117,16 @@ void main()
 	
 	printf("Enter reg.no ");
 	scanf("%ls",&reg);
-	
 	printf("Enter first name ");
 	scanf("%s",&first_name);
-	
 	printf("Enter middle name ");
 	scanf("%s",&middle_name);
-	
 	printf("Enter last name ");
 	scanf("%s",&last_name);
-	
 	printf("Enter city name ");
 	scanf("%s",&city);
-	
 	printf("Enter contact no ");
 	scanf("%ls",&contact);
-	
 	printf("Enter cgpa ");
 	scanf("%f",&cgpa);
 	
@@ -984,5 +978,19 @@ int main(){
 		for (i=1;i<=10;i++){
 			printf("2 * %d = %d\n",i,2*i);
 		}
+	return 0;
+}
+//WAP to use function to print integer value of character!
+#include<stdio.h>
+int func(char ascii){
+	return ((int)ascii);
+}
+int main(){
+	int ascii;
+	char ch;
+	printf("Enter any ascii value in character=");
+	scanf("%c",&ascii);
+	ch=func(ascii);
+	printf("The character is = %d",ch);
 	return 0;
 }
