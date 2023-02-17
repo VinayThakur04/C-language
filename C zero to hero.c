@@ -951,3 +951,21 @@ int main(){
 	}
 	return 0;
 }
+//WAP to use continue statement!
+#include<stdio.h>
+int main(){
+	int j,i,a,b;
+	printf("enter the number for i: ");
+	scanf("%d",&a);
+	printf("\nenter the number for j: ");
+	scanf("%d",&b);
+	for(i=1;i<a;i++){
+		for(j=1;j<b;j++){
+			if(j==2){
+				continue;
+			}
+			printf("%d\n",j);
+		}
+	}
+	return 0;
+}
