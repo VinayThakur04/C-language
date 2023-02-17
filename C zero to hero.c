@@ -994,3 +994,17 @@ int main(){
 	printf("The character is = %d",ch);
 	return 0;
 }
+//WAP to use function to print character of for given integer!
+#include<stdio.h>
+char func(int ascii){
+	return ((char)ascii);
+}
+int main(){
+	int ascii;
+	char ch;
+	printf("Enter any ascii value in decimal=");
+	scanf("%d",&ascii);
+	ch=func(ascii);
+	printf("The character is = %c",ch);
+	return 0;
+}
