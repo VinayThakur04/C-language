@@ -917,7 +917,7 @@ int main() {
 
     return 0;
 }
-//WAP to print stars in pattern!
+//WAP to print stars in right angled triangle pattern!
 #include<stdio.h>
 int main(){
 	int j,i,a;
@@ -925,6 +925,20 @@ int main(){
 	scanf("%d",&a);
 	for(i=1;i<=a;i++){
 		for(j=1;j<=i;j++){
+			printf("* ");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+//WAP to print stars in inverted right angled triangle pattern!
+#include<stdio.h>
+int main(){
+	int j,i,a;
+	printf("enter the number for right angled triangle: ");
+	scanf("%d",&a);
+	for(i=a;i>0;i--){
+		for(j=i;j>0;j--){
 			printf("* ");
 		}
 		printf("\n");
