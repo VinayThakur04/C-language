@@ -1042,4 +1042,20 @@ int main(){
     
     return 0;
 }
-//Vinay Kumar Thakur
+//You have been given 3 integers - l, r and k. Find how many numbers between l and r
+ //(both inclusive) are divisible by k. You do not need to print these numbers, you 
+ //just have to find their count.
+ #include<stdio.h>
+int main(){
+	int l,r,k,i,num=0;
+	scanf("%d %d %d",&l,&r,&k);
+	for(i=l;i<=r;i++){
+		if(i%k == 0){
+			num++;
+		}
+		else
+			continue;	
+	}
+	printf("%d",num);
+	return 0;
+}
