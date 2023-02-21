@@ -1059,3 +1059,39 @@ int main(){
 	printf("%d",num);
 	return 0;
 }
+/*In this HackerRank Bitwise operators in the c programming problem solution, In this challenge,
+ you will use logical bitwise operators. All data is stored in its binary representation. The logical 
+ operators, and C language, use 1 to represent true and 0 to represent false. The logical operators 
+ compare bits in two numbers and return true or false, 0 or 1, for each bit compared.*/
+ #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+//Complete the following function.
+void calculate_the_maximum(int n, int k) {
+  //Write your code here.
+  int maxAnd = 0, maxOr = 0, maxXor = 0, i, j;
+  for(i=1; i<=n; i++){
+      for(j=i+1; j<=n; j++){
+          if(((i&j) > maxAnd) && ((i&j) < k)){
+              maxAnd = i&j;
+          }
+          if(((i|j) > maxOr) && ((i|j) < k)){
+              maxOr = i|j;
+          }
+          if(((i^j) > maxXor) && ((i^j) < k)){
+              maxXor = i^j;
+          }
+      }
+  }
+  printf("%d\n%d\n%d\n",maxAnd, maxOr, maxXor);
+}
+
+int main() {
+    int n, k;
+  
+    scanf("%d %d", &n, &k);
+    calculate_the_maximum(n, k);
+ 
+    return 0;
+}
