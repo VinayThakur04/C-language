@@ -1095,3 +1095,16 @@ int main() {
  
     return 0;
 }
+//WAP to convert data type to another datatype forcefully!
+#include<stdio.h>
+int main(){
+	int average, total;
+	float counter;
+	printf("Enter the integer value for total: \n");
+	scanf("%d",&total);
+	printf("Enter the float value for counter: \n");
+	scanf("%f",&counter);
+	average = total / (int)counter;
+	printf("The average of number is: %d",average);
+	return 0;
+}
