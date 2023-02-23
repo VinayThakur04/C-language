@@ -1121,3 +1121,4 @@ int main(){
 	printf("The average of number is: %d",average);
 	return 0;
 }
+//Vinay kumar thakur
