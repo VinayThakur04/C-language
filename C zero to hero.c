@@ -1121,4 +1121,27 @@ int main(){
 	printf("The average of number is: %d",average);
 	return 0;
 }
+//WAP to count string in n times!
+#include<stdio.h>
+#include<string.h>
+int sollution(char s[], char k){
+	int count = 0,i;
+	for(i=0;i<strlen(s);i++){
+		if(s[i]==k){
+			count++;
+		}
+	}
+	return count;
+}
+int main(){
+	int t,i;
+	scanf("%d",&t);
+	for(i=0;i<t;i++){
+		char s[100000],k;
+		scanf("%s\n%c",&s,&k);
+		int result = sollution(s,k);
+		printf("%d\n",result);
+	}
+	return 0;
+}
 //Vinay kumar thakur
