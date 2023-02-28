@@ -1144,45 +1144,4 @@ int main(){
 	}
 	return 0;
 }
-/*In number theory, a palindromic prime number is a positive integer where the number is both palindrome
- number as well as prime number. You are given an integer n. Print "YES" (without quotes) if the given number
-  is palindromic prime number, print "NO" (without quotes) otherwise.*/
-  #include <stdio.h>
-// Function to check if a number is prime
-int isPrime(int n) {
-    if (n <= 1) {
-        return 0;
-    }
-    for (int i = 2; i <= n/2; i++) {
-        if (n % i == 0) {
-            return 0;
-        }
-    }
-    return 1;
-}
-
-// Function to check if a number is palindromic
-int isPalindrome(int n) {
-    int temp = n, reversed = 0;
-    while (temp > 0) {
-        reversed = (reversed * 10) + (temp % 10);
-        temp /= 10;
-    }
-    return (n == reversed);
-}
-
-// Main function
-int main() {
-    int n;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-
-    if (isPrime(n) && isPalindrome(n)) {
-        printf("YES\n");
-    }
-    else {
-        printf("NO\n");
-    }
-
-    return 0;
-}
+//Vinay Kumar Thakur
