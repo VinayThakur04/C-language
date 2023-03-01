@@ -1188,3 +1188,19 @@ int main() {
 
     return 0;
 }
+//WAP to perform the addition of two number by call by referance function
+int sumbyref(int *x , int *y){
+	*x = *x + *y;
+	return *x;
+}
+int main(){
+	int a , b;
+	printf("Enter the 1st number: ");
+	scanf("%d",&a);
+	printf("Enter the 2nd number: ");
+	scanf("%d",&b);
+	printf("The entered number is %d and %d\n",a ,b);
+	sumbyref(&a , &b);
+	printf("The new value of number is %d", a);
+	return 0;
+}
