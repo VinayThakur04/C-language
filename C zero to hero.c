@@ -1144,6 +1144,9 @@ int main(){
 	}
 	return 0;
 }
+
+//FUNCTION STARTED!
+
 /*In number theory, a palindromic prime number is a positive integer where the number
  is both palindrome number as well as prime number. You are given an integer n. 
  Print "YES" (without quotes) if the given number is palindromic prime number, 
