@@ -1188,6 +1188,23 @@ int main() {
 
     return 0;
 }
+//WAP to perform multiplication
+#include<stdio.h>
+int square(int y)//function prototype | defination
+{
+	return y * y;
+}
+int sum(int y){
+	return y + y;
+}
+int main(){
+	int x;
+	for(x=1;x<=10;++x){
+		printf("%d ",square(x));//function call
+		printf("%d\n",sum(x));
+	}
+	return 0;
+}
 //WAP to perform the addition of two number by call by referance function
 int sumbyref(int *x , int *y){
 	*x = *x + *y;
