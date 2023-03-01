@@ -1205,6 +1205,21 @@ int main(){
 	}
 	return 0;
 }
+//WAP to change the value of number and perform multiplication!
+#include<stdio.h>
+int cubebyreferance(int *n){
+	*n = *n * *n * *n;
+	return *n;
+}
+int main(){
+	int number;
+	printf("Enter the number: ");
+	scanf("%d",&number);
+	printf("The original value of number is %d\n",number);
+	cubebyreferance(&number);
+	printf("The new value of number is %d", number);
+	return 0;
+}
 //WAP to perform the addition of two number by call by referance function
 int sumbyref(int *x , int *y){
 	*x = *x + *y;
