@@ -1239,3 +1239,4 @@ int main(){
 	printf("The new value of number is %d", a);
 	return 0;
 }
+//Vinay Kumar Thakur
