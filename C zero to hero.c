@@ -1319,3 +1319,37 @@ void print(){
 	printf("%d\n",x);
 	x+=10;
 }
+//WAP to print a table of any number using global variable , find weather the num is even or odd using local variable and find weather the num is negative or postive using block scoped variable!
+int num;
+int main(){
+	printf("Enter a number: ");
+	scanf("%d",&num);
+	
+	//table of any number using global variable
+	for(int i=1;i<=10;i++){
+		printf("%d X %d = %d\n",num,i,num*i);
+	}
+	
+	//weather the num is even or odd using local variable
+	if(num%2==0){
+		printf("Even\n");
+	}
+	else{
+		printf("Odd\n");
+	}
+
+	//block scoped
+	{
+	if(num>0){
+		printf("Positive");
+	}
+	else if(num<0){
+		printf("Negative");
+	}
+	else{
+		printf("Zero");
+	}
+	}
+	
+	return 0;
+}
