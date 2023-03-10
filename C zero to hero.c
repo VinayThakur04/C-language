@@ -1304,3 +1304,18 @@ int main(){
 	return 0;
 }
 int x=10;
+//WAP to use external programme in this programme (part 1)
+#include<stdio.h>
+#include"extern2.c"//global variable
+int x=30;
+int main(){
+	print();
+	printf("%d",x);
+	return 0;
+}
+//External programme (part 2)
+void print(){
+	extern int x;
+	printf("%d\n",x);
+	x+=10;
+}
