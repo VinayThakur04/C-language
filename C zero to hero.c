@@ -1257,3 +1257,20 @@ int main(){
 	printf("%d",result);
 	return 0;
 }
+//WAP to use auto memory location
+#include<stdio.h>
+void func1(){
+	auto int a=10; //local variable of function()
+	printf("\n a=%d",a);
+}
+void func2(){
+	auto int a = 20;//local variable of fumction2()
+	printf("\n a=%d",a);
+}
+int main(){
+	auto int a = 30;
+	func1();
+	func2();
+	printf("\n a=%d",a);
+	return 0;
+}
