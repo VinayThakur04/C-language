@@ -1289,3 +1289,18 @@ int main(){
 	function();
 	return 0;
 }
+//WAP to use external variable
+#include<stdio.h>
+void first(){
+	extern int x;
+	printf("\nx=%d",x);
+	x+=10;
+}
+int main(){
+	extern int x;
+	printf("\nx=%d",x);
+	first();
+	printf("\nx=%d",x);
+	return 0;
+}
+int x=10;
