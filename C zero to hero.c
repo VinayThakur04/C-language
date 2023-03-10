@@ -1239,4 +1239,21 @@ int main(){
 	printf("The new value of number is %d", a);
 	return 0;
 }
-//Vinay Kumar
+//WAP to use function loop
+#include<stdio.h>
+int fact(int x){
+	if(x==0){
+		return 1;
+	}
+	else{
+		return x*fact(x-1);
+	}
+}
+int main(){
+	int n,result;
+	printf("Enter number: ");
+	scanf("%d",&n);
+	result = fact(n);
+	printf("%d",result);
+	return 0;
+}
