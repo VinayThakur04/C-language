@@ -1306,7 +1306,7 @@ int main(){
 int x=10;
 //WAP to use external programme in this programme (part 1)
 #include<stdio.h>
-#include"extern2.c"//global variable
+#include"extern2.c" //global variable
 int x=30;
 int main(){
 	print();
