@@ -1385,4 +1385,4 @@ int main() {
     printf("%d", ans); 
     return 0;
 }
-//Vinay Kumar Thakur
+//Vinay Kumar
