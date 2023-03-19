@@ -1387,3 +1387,4 @@ int main() {
 }
 //Vinay Kumar Thakur
 //Simple C code
+//checking code
