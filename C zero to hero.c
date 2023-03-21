@@ -1386,5 +1386,3 @@ int main() {
     return 0;
 }
 //Vinay Kumar Thakur
-//Simple C code
-//checking code 2
