@@ -889,6 +889,38 @@ int main()
 	}
 	return 0;
 }
+
+//WAP to find the sum of diagonal elements of matrix.
+int main(){
+	int r,c,i,j,sum=0;
+	printf("Enter the value of rows and columns: ");
+	scanf("%d %d",&r,&c);
+	int a[r][c];
+	printf("Enter the values for matrix: \n");
+	for (i=0;i<r;i++){
+		for (j=0;j<c;j++){
+			scanf("%d",&a[i][j]);
+		}
+	}
+	//printing of addition of sum of diagonal elements of matrix
+	for (i=0;i<r;i++){
+		for (j=0;j<c;j++){
+			
+			printf("%d\t",a[i][j]);
+			}
+			printf("\n");
+		}
+	//Sum of diagonals and printing
+	for (i=0;i<r;i++){
+		for (j=0;j<c;j++){
+			if(i==j)
+			sum=sum+a[i][j];
+			}
+		}
+	printf("Sum of Diagonal elemants:%d",sum);
+	return 0;
+}
+
 //create an array of size  dynamically, and read the values from stdin. Iterate the array
 //calculating the sum of all elements. Print the sum and free the memory where the array is 
 //stored c programming.
