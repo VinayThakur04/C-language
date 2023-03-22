@@ -1449,6 +1449,23 @@ int main() {
     printf("%d", ans); 
     return 0;
 }
+//Printing array
+#include<stdio.h>
+int main(){
+	int a[100],n,i;
+	printf("\nEnter number of elements:");
+	scanf("%d",&n);
+	printf("\n Enter array elemants:");
+	for(i=0;i<n;i++){
+		scanf("%d",&a[i]);
+	}
+	
+	printf("\nEntered array elements are:\n");
+	for(i=0;i<n;i++){
+		printf("%d\n",a[i]);
+	}
+	return 0;
+}
 //printing base address of an array
 #include<stdio.h>
 int main(){
