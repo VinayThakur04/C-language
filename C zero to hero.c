@@ -1504,4 +1504,26 @@ int main(){
 	printf("Min:%d , Max:%d",min,max);
 	return 0;
 }
+//WAP function to to call by reference!
+#include<stdio.h>
+void reference(int x[],int size){
+	int i;
+	for(i=0;i<size;i++){
+		printf("%d",x[i]);
+	}
+}
+
+int main(){
+	int arr[100],n;
+	int i;
+	printf("Enter n: \n");
+	scanf("%d",&n);
+	printf("Enter array elements: ");
+	for(i=0;i<n;i++){
+		scanf("%d",&arr[i]);
+	}
+	printf("\nElements by reference:");
+	reference(arr,n);
+	return 0;
+}
 //Vinay Kumar Thakur
