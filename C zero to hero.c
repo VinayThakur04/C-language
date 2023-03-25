@@ -1526,4 +1526,25 @@ int main(){
 	reference(arr,n);
 	return 0;
 }
+//WAP function to to call by value!
+#include<stdio.h>
+void value(int x[]){
+	printf("\n%d",x);
+}
+
+int main(){
+	int arr[100],n;
+	int i;
+	printf("Enter n: \n");
+	scanf("%d",&n);
+	printf("Enter array elements: ");
+	for(i=0;i<n;i++){
+		scanf("%d",&arr[i]);
+	}
+	printf("\npassing Elements by value:");
+	for(i=0;i<n;i++){
+		value(arr[i]);
+	}
+	return 0;
+}
 //Vinay Kumar Thakur
