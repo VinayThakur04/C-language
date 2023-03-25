@@ -1595,4 +1595,49 @@ int main(){
 	}
 	return 0;
 }
+//WAP to ask the user to perform  insertion and deletion operation in 1D array using switch case
+#include<stdio.h>
+int main(){
+	int array[100],position,c,n,value,w;
+	printf("Enter number of elements in array:\n");
+	scanf("%d",&n);
+	printf("Enter %d elements:\n",n);
+	for(c=0;c<n;c++){
+		scanf("%d",&array[c]);
+	}
+	
+	printf("Which operation you want to do press 1 for Insertion and 2 for Deletion: \n");
+	scanf("%d",&w);
+	switch(w){
+		case 1:
+			printf("Enter the location where you wish to insert an element:\n");
+			scanf("%d",&position);
+	
+			printf("Enter the value to be inserted:");
+			scanf("%d",&value);
+	
+			for(c=n-1;c>=position - 1;c--){
+			array[c+1]=array[c];
+			}
+			array[position-1]=value;
+	
+			printf("Resultant array is:\n");
+			for(c=0;c <= n;c++){
+				printf("%d\n",array[c]);}
+		break;
+		case 2:
+			printf("Enter the location where you wish to delete from an array:\n");
+			scanf("%d",&position);
+			for(c=position-1;c<n-1;c++){
+				array[c]=array[c+1];
+			}
+			printf("Resultant array is:\n");
+			for(c=0;c<n-1;c++){
+			printf("%d\n",array[c]);
+			}
+		break;
+	}
+	
+	return 0;
+}
 //Vinay Kumar Thakur
