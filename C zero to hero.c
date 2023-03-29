@@ -1785,3 +1785,77 @@ int main(){
 	printf("Element not Found");
 	return 0;
 }
+//WAP to perform sorting ,linear search and binary with switch case!
+#include<stdio.h>
+int main(){
+	int a[100],hold,i,j,n,key,beg,last,mid,loc = -1,w;
+	printf("Enter the value of n: ");
+	scanf("%d",&n);
+	printf("Enter %d elements:\n",n);
+	for(i=0;i<n;i++){
+		scanf("%d",&a[i]);
+	}
+	printf("Data items in original order");
+	for(i=0;i<n;i++){
+		printf("%d ",a[i]);
+	}
+	printf("\nEnter 1 for Linear Search and 2 for Binary Search: ");
+	scanf("%d",&w);
+switch(w){
+		case 1:
+			printf("Enter integer value to search inarray");
+	scanf("%d",&key);
+	
+	for(i=0;i<n;i++){
+		if(a[i]==key){
+			loc=i;
+			break;
+		}
+}
+	if(loc!=-1){
+		printf("Element is present in %d position",loc+1);
+	}
+	else
+	printf("Element not Found");
+		break;
+		case 2:
+			for(i=0;i<n-1;i++){
+		for(j=0;j<n-1;j++){
+			if(a[j]>a[j+1]){
+				hold = a[j];
+				a[j]=a[j+1];
+				a[j+1]=hold;
+			}
+			}
+	}
+	printf("\nData items are in accending form:");
+		for(i=0;i<n;i++){
+		printf("%d ",a[i]);
+	}
+	beg=0;
+	last = n-1;
+	printf("\nEnter integer value to search in sorted array: ");
+	scanf("%d",&key);
+	while(beg<=last){
+		mid=(beg + last)/2;
+		if(a[mid]==key){
+			loc = mid;
+			break;
+		}
+	else if(a[mid]>key){
+		last = mid-1;
+	}
+	else if(a[mid]<key){
+		beg = mid+1;
+	}
+	}
+	if(loc!=-1){
+		printf("Element is present in %d position",loc+1);
+	}
+	else
+	printf("Element not Found");
+		break;
+	}
+	
+	return 0;
+}
