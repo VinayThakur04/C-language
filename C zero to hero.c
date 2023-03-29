@@ -1640,7 +1640,7 @@ int main(){
 	return 0;
 }
 
-//WAP to find the position of user inputed number in array!
+//WAP to find the position of user inputed number in array in linear search!
 #include<stdio.h>
 int main(){
 	int a[50],n,key;
