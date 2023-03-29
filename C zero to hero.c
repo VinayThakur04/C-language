@@ -1640,7 +1640,7 @@ int main(){
 	return 0;
 }
 
-//WAP to find the position of user inputed number in array in linear search!
+//WAP to find the position of user inputed number in array using linear search!
 #include<stdio.h>
 int main(){
 	int a[50],n,key;
@@ -1665,5 +1665,41 @@ int main(){
 	}
 	else
 	printf("Element not Found");
+	return 0;
+}
+//WAP to find the position of user inputed number in array using Binary search!
+#include<stdio.h>
+int main(){
+	int a[50],n,key,beg,last,mid;
+	int i,loc = -1;
+	printf("Enter the value of n: ");
+	scanf("%d",&n);
+	printf("Enter %d elements:\n",n);
+	for(i=0;i<n;i++){
+		scanf("%d",&a[i]);
+	}
+	beg=0;
+	last = n-1;
+	printf("Enter integer value to search in sorted array: ");
+	scanf("%d",&key);
+	while(beg<=last){
+		mid=(beg + last)/2;
+		if(a[mid]==key){
+			loc = mid;
+			break;
+		}
+	else if(a[mid]>key){
+		last = mid-1;
+	}
+	else if(a[mid]<key){
+		beg = mid+1;
+	}
+	}
+	if(loc!=-1){
+		printf("Element is present in %d position",loc+1);
+	}
+	else
+	printf("Element not Found");
+	
 	return 0;
 }
