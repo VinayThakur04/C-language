@@ -1639,5 +1639,31 @@ int main(){
 	}
 	return 0;
 }
-//Vinay Kumar Thakur
-//Code by Vinay
+
+//WAP to find the position of user inputed number in array!
+#include<stdio.h>
+int main(){
+	int a[50],n,key;
+	int i,loc = -1;
+	printf("Enter the value of n: ");
+	scanf("%d",&n);
+	printf("Enter %d elements:\n",n);
+	for(i=0;i<n;i++){
+		scanf("%d",&a[i]);
+	}
+	printf("Enter integer value to search inarray");
+	scanf("%d",&key);
+	
+	for(i=0;i<n;i++){
+		if(a[i]==key){
+			loc=i;
+			break;
+		}
+	}
+	if(loc!=-1){
+		printf("Element is present in %d position",loc+1);
+	}
+	else
+	printf("Element not Found");
+	return 0;
+}
