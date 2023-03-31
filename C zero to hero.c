@@ -1859,4 +1859,19 @@ switch(w){
 	
 	return 0;
 }
-//Code By Vinay Kumar Thakur
+//WAP to perform user defined function!
+#include<stdio.h>
+struct car{
+	char *name;
+	int seat;
+	float price;
+};
+
+int main(){
+	struct car mycar;
+	mycar.name = "lamborghini avendator";
+	mycar.seat = 2;
+	mycar.price = 80000000;
+	printf("%s\n%d\n%.1f\n",mycar.name,mycar.seat,mycar.price);
+return 0;
+}
