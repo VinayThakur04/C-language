@@ -1894,3 +1894,87 @@ int main(){
 	printf("%s %d %.1f\n",mycar.name,mycar.seat,mycar.price);
 return 0;
 }
+//WAP to ask the to enter 5 records of a student
+#include<stdio.h>
+struct student{
+	char *name[100];
+	int roll;
+	double reg;
+	float marks;
+	float cgpa;
+};
+
+int main(){
+	struct student s1,s2,s3,s4,s5;
+	printf("Enter the name of student\n");
+	scanf(" %[^\n]s", &s1.name);
+	printf("Enter the roll no. of this student\n");
+	scanf("%d",&s1.roll);
+	printf("Enter the reg. no of student\n");
+	scanf("%lf",&s1.reg);
+	printf("Enter the marks obtained by the student\n");
+	scanf("%f",&s1.marks);
+	printf("Enter the CGPA obtained by the student\n");
+	scanf("%f",&s1.cgpa);
+	
+	printf("%s,%d ,%.1lf ,%.1f ,%.1f",s1.name,s1.roll,s1.reg,s1.marks,s1.cgpa);
+	
+	
+	printf("\nEnter the name of student\n");
+	scanf(" %[^\n]s", &s2.name);
+	printf("Enter the roll no. of this student\n");
+	scanf("%d",&s2.roll);
+	printf("Enter the reg. no of student\n");
+	scanf("%lf",&s2.reg);
+	printf("Enter the marks obtained by the student\n");
+	scanf("%f",&s2.marks);
+	printf("Enter the CGPA obtained by the student\n");
+	scanf("%f",&s2.cgpa);
+	
+	printf("%s,%d ,%.1lf ,%.1f ,%.1f",s2.name,s2.roll,s2.reg,s2.marks,s2.cgpa);
+	
+	
+	printf("\nEnter the name of student\n");
+	scanf(" %[^\n]s", &s3.name);
+	printf("Enter the roll no. of this student\n");
+	scanf("%d",&s3.roll);
+	printf("Enter the reg. no of student\n");
+	scanf("%lf",&s3.reg);
+	printf("Enter the marks obtained by the student\n");
+	scanf("%f",&s3.marks);
+	printf("Enter the CGPA obtained by the student\n");
+	scanf("%f",&s3.cgpa);
+	
+	printf("%s,%d ,%.1lf ,%.1f ,%.1f",s3.name,s3.roll,s3.reg,s3.marks,s3.cgpa);
+	
+	
+	printf("\nEnter the name of student\n");
+	scanf(" %[^\n]s", &s4.name);
+	printf("Enter the roll no. of this student\n");
+	scanf("%d",&s4.roll);
+	printf("Enter the reg. no of student\n");
+	scanf("%lf",&s4.reg);
+	printf("Enter the marks obtained by the student\n");
+	scanf("%f",&s4.marks);
+	printf("Enter the CGPA obtained by the student\n");
+	scanf("%f",&s4.cgpa);
+	
+	printf("%s,%d ,%.1lf ,%.1f ,%.1f",s4.name,s4.roll,s4.reg,s4.marks,s4.cgpa);
+	
+	
+	printf("\nEnter the name of student\n");
+	scanf(" %[^\n]s", &s5.name);
+	printf("Enter the roll no. of this student\n");
+	scanf("%d",&s5.roll);
+	printf("Enter the reg. no of student\n");
+	scanf("%lf",&s5.reg);
+	printf("Enter the marks obtained by the student\n");
+	scanf("%f",&s5.marks);
+	printf("Enter the CGPA obtained by the student\n");
+	scanf("%f",&s5.cgpa);
+	
+	printf("%s,%d ,%.1lf ,%.1f ,%.1f",s5.name,s5.roll,s5.reg,s5.marks,s5.cgpa);
+
+	
+	return 0;
+}
