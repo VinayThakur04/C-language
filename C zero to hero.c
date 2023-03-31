@@ -1978,3 +1978,36 @@ int main(){
 	
 	return 0;
 }
+//WAP to ask the user to enter the number of student details with for loop!
+#include<stdio.h>
+struct student{
+	char *name[100];
+	char *city[100];
+	int roll;
+	double reg;
+	float marks;
+	float cgpa;
+};
+int main(){
+	int i,n;
+	printf("Enter the number of student you want to add:\n");
+	scanf("%d",&n);
+	struct student s[n];
+	for(i=1;i<=n;i++){
+	printf("Enter the name of student %d\n",i);
+	scanf(" %[^\n]s", &s[i].name);
+	printf("Enter the city of student\n");
+	scanf(" %[^\n]s", &s[i].city);
+	printf("Enter the roll no. of this student\n");
+	scanf("%d",&s[i].roll);
+	printf("Enter the reg. no of student\n");
+	scanf("%lf",&s[i].reg);
+	printf("Enter the marks obtained by the student\n");
+	scanf("%f",&s[i].marks);
+	printf("Enter the CGPA obtained by the student\n");
+	scanf("%f",&s[i].cgpa);
+	
+	printf("%s,%s,%d ,%.1lf ,%.1f ,%.1f\n\n",s[i].name,s[i].city,s[i].roll,s[i].reg,s[i].marks,s[i].cgpa);
+	}
+	return 0;
+}
