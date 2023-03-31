@@ -1875,3 +1875,22 @@ int main(){
 	printf("%s\n%d\n%.1f\n",mycar.name,mycar.seat,mycar.price);
 return 0;
 }
+//WAP to perform user defined function!
+#include<stdio.h>
+struct car{
+	char *name;
+	int seat;
+	float price;
+};
+
+int main(){
+	struct car mycar;
+	printf("Enter the car name which you want?\n");
+	gets(mycar.name);
+	printf("Enter the number of seat\n");
+	scanf("%d",&mycar.seat);
+	printf("Enter the price of car:\n");
+	scanf("%f",&mycar.price);
+	printf("%s %d %.1f\n",mycar.name,mycar.seat,mycar.price);
+return 0;
+}
