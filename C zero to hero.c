@@ -2033,4 +2033,22 @@ int main()
         printf("%d ", *(arr + i));
     return 0;
 }
-//Vinay kumar
+//takes a string c from the user and replaces the original string m with it:
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char m[100] = "vinay";
+    char c[100];
+    int n;
+
+    printf("Original movie name: %s\n", m);
+    printf("Enter new movie name: ");
+    scanf("%s", c);
+
+    strcpy(m, c);
+
+    printf("New movie name: %s\n", m);
+
+    return 0;
+}
