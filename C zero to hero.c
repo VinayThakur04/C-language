@@ -2117,3 +2117,42 @@ int main(){
 	
 	return 0;
 }
+//Another program for Nested structure - Embedded structure.
+#include<stdio.h>
+struct address{
+	char housename[25];
+	char city[25];
+	char streetname[25];
+};
+struct employee{
+	int id;
+	char name[25];
+	float salary;
+	
+	struct address add;
+	
+};
+
+int main(){
+	struct employee E;
+	printf("\nEnter Employee Id: ");
+	scanf("%d",&E.id);
+	printf("\nEnter Employee Name: ");
+	scanf("%s",&E.name);
+	printf("\nEnter Employee Salary: ");
+	scanf("%f",&E.salary);
+	printf("\nEnter Employee House Name: ");
+	scanf("%s",&E.add.housename);
+	printf("\n\tEnter Employee City: ");
+	scanf("%s",&E.add.city);
+	printf("\n\tEnter Employee Streetname: ");
+	scanf("%s",&E.add.streetname);
+	
+	printf("\nDatails of Employees");
+	printf("\n\tEmployee Id: %d",E.id);
+	printf("\n\tEmployee Name: %s",E.name);
+	printf("\n\tEmployee Salary: %f",E.salary);
+	printf("\n\tEmployee House Name: %s",E.add.housename);
+	printf("\n\tEmployee city: %s",E.add.city);
+	printf("\n\tEmployee streetname: %s",E.add.streetname);
+}
