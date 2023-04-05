@@ -2095,3 +2095,25 @@ int main(){
 	myCarPtr->name,myCarPtr->price,myCarPtr->seats,(*myCarPtr).name,(*myCarPtr).price,(*myCarPtr).seats);
 	return 0;
 }
+//Nested structure - Embedded structure.
+#include<stdio.h>
+struct Employee{
+	char ename[25];
+	int ssn;
+	float salary;
+	
+	struct dob{
+		int date;
+		int month;
+		int year; 
+	}db1;
+}emp = {"Vinay",1000,10000.50,{18,9,2004}};
+
+int main(){
+	printf("\nEmployee Name: %s",emp.ename);
+	printf("\nEmployee SSN: %d",emp.ssn);
+	printf("\nEmployee Salary: %.1f",emp.salary);
+	printf("\nEmployee DOB: %d/%d/%d",emp.db1.date,emp.db1.month,emp.db1.year);
+	
+	return 0;
+}
