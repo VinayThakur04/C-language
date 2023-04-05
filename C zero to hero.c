@@ -2079,3 +2079,19 @@ int main(){
 	printf("Marks: %.1f\n",s1.marks);
 	return 0;
 }
+//Program for pointer to a structure
+#include<stdio.h>
+struct car{
+	char name[50];
+	int seats;
+	float price;
+};
+int main(){
+	struct car mycar = {"Renault",2,500000};
+	struct car *myCarPtr;
+	myCarPtr = &mycar;
+	
+	printf("%s %.1f %d \n%s %.1f %d \n%s %.1f %d\n",mycar.name,mycar.price,mycar.seats,
+	myCarPtr->name,myCarPtr->price,myCarPtr->seats,(*myCarPtr).name,(*myCarPtr).price,(*myCarPtr).seats);
+	return 0;
+}
