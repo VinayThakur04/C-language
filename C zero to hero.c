@@ -2156,3 +2156,25 @@ int main(){
 	printf("\n\tEmployee city: %s",E.add.city);
 	printf("\n\tEmployee streetname: %s",E.add.streetname);
 }
+//You are provided an array A of size N that contains non-negative integers. Your task is to 
+//determine whether the number that is formed by selecting the last digit of all the N numbers is divisible by 10.
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n,i,a[100];
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    if(a[n-1]%10==0){
+        printf("Yes");
+    }
+    else{
+        printf("No");
+    }
+    return 0;
+}
