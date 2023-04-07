@@ -2179,3 +2179,4 @@ int main() {
     return 0;
 }
 //Vinay Kumar Thakur
+//code by vinay
